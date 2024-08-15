@@ -1,0 +1,32 @@
+[
+    {
+        "id": "q18",
+        "question": "Based on their visit to the weather station, Alex and Claire connected points A (-2,-5), B (0,3), and C (6,-3) on the Cartesian plane. What geometric shape is formed by these points?",
+        "options": [
+            { "text": "Rectangle", "isCorrect": false },
+            { "text": "Circle", "isCorrect": false },
+            { "text": "Triangle", "isCorrect": true },
+            { "text": "Square", "isCorrect": false }
+        ]
+    },
+    {
+        "id": "q19",
+        "question": "Alex and Claire plotted four points: A (-4,3), B (2,3), C (2,-1), and D (4,-1). What shape do these points form on the Cartesian plane?",
+        "options": [
+            { "text": "Square", "isCorrect": false },
+            { "text": "Parallelogram", "isCorrect": false },
+            { "text": "Rectangle", "isCorrect": true },
+            { "text": "Rhombus", "isCorrect": false }
+        ]
+    },
+    {
+        "id": "q20",
+        "question": "Claire plotted the points D (6,-2), E(6,-6), F(2,-6) and G (2,-2) on the Cartesian plane. What shape is created when these points are connected?",
+        "options": [
+            { "text": "Rectangle", "isCorrect": false },
+            { "text": "Parallelogram", "isCorrect": false },
+            { "text": "Square", "isCorrect": true },
+            { "text": "Trapezium", "isCorrect": false }
+        ]
+    }
+]

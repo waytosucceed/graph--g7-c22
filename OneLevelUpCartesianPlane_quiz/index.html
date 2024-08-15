@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartesian Plane Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header" style="width:100%; box-shadow:5px 5px 10px rgb(0, 0, 0); padding:2px 0 10px 20px; background-color: white;">
+        <img src="Logo.png" width="5%" style="float:left; margin-top:25px;" class="img-responsive">
+        <span> <img src="header.png" width="30%" height="auto" class="img-responsive"></span>
+    </div>
+    <div class="container">
+        <audio id="point-sound" src="points.mp3"></audio>
+  <audio id="fail" src="fail.mp3"></audio>
+        <div class="questions">
+            <div class="question" id="question4" style="display: none;">
+                <p>Q4. Three vertices of a rectangle formed on the Cartesian plane are (–2,7), (–3,7), and (–3,2). Find the fourth vertex?</p>
+                <div class="options">
+                    <button class="option" onclick="checkAnswer('(-2,2)', 'q4')">(2,2)</button>
+                    <button class="option" onclick="checkAnswer('(-2,2)', 'q4')">(2,-2)</button>
+                    <button class="option correct" onclick="checkAnswer('(-2,2)', 'q4')">(-2,2)</button>
+                    <button class="option" onclick="checkAnswer('(-2,2)', 'q4')">(-2,-2)</button>
+                </div>
+                <p class="feedback" id="feedback-q4"></p>
+            </div>
+            <div class="question" id="question5" style="display: none;">
+                <p>Q5. Three vertices of a square are (–6,9), (–7,9), and (–7,10). Find the fourth vertex of the square formed on the Cartesian plane.</p>
+                <div class="options">
+                    <button class="option" onclick="checkAnswer('(-6,10)', 'q5')">(6,-10)</button>
+                    <button class="option correct" onclick="checkAnswer('(-6,10)', 'q5')">(-6,10)</button>
+                    <button class="option" onclick="checkAnswer('(-6,10)', 'q5')">(6,10)</button>
+                    <button class="option" onclick="checkAnswer('(-6,10)', 'q5')">(-6,-10)</button>
+                </div>
+                <p class="feedback" id="feedback-q5"></p>
+            </div>
+            <div class="navigation">
+                <button id="prevBtn" style="background-color: orange;">Previous</button>
+                <button id="nextbtn" style="display: none; background-color: green;">Next</button>
+
+                
+            </div>
+        </div>
+        <div style="text-align: center;">
+        <div id="canvasContainer">
+            <canvas id="cartesianPlane"></canvas>
+        </div>
+        <!-- <button id="removeLastPointBtn" onclick="removeLastPoint()">Remove Last Point</button>
+        <button id="resetBtn" onclick="resetPoints()">Reset</button> -->
+        <div style="display: flex; text-align: center; justify-content: center; gap:10px">
+            <button id="resetBtn" class="delete-icons" onclick="resetPoints()">🗑</button>
+            <button id="removeLastPointBtn"  class="delete-icons" onclick="removeLastPoint()"> ↺</button>
+        </div>
+    </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

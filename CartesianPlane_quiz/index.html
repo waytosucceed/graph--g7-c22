@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartesian Plane Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header" style="width:100%; box-shadow:5px 5px 10px rgb(0, 0, 0); padding:2px 0 10px 20px; background-color: white;">
+        <img src="Logo.png" width="5%" style="float:left; margin-top:25px;" class="img-responsive">
+        <span> <img src="header.png" width="30%" height="auto" class="img-responsive"></span>
+    </div>
+    <div class="container">
+        <audio id="point-sound" src="points.mp3"></audio>
+  <audio id="fail" src="fail.mp3"></audio>
+        <div class="questions">
+            <div class="question" id="question1">
+                <p>Q18 Based on their visit to the weather station, Alex and Claire connected points A (-2,-5), B (0,3), and C (6,-3) on the Cartesian plane. What geometric shape is formed by these points?</p>
+                <div class="options">
+                    <button class="option" onclick="checkAnswer('Triangle', 'q18')">Rectangle</button>
+                    <button class="option" onclick="checkAnswer('Triangle', 'q18')">Circle</button>
+                    <button class="option correct" onclick="checkAnswer('Triangle', 'q18')">Triangle</button>
+                    <button class="option" onclick="checkAnswer('Triangle', 'q18')">Square</button>
+                </div>
+                <p class="feedback" id="feedback-q18"></p>
+            </div>
+            <div class="question" id="question2" style="display: none;">
+                <p>Q19 Alex and Claire plotted four points: A (-4,3), B (2,3), C (2,-1), and D (4,-1). What shape do these points form on the Cartesian plane?</p>
+                <div class="options">
+                    <button class="option" onclick="checkAnswer('Rectangle', 'q19')">Square</button>
+                    <button class="option" onclick="checkAnswer('Rectangle', 'q19')">Parallelogram</button>
+                    <button class="option correct" onclick="checkAnswer('Rectangle', 'q19')">Rectangle</button>
+                    <button class="option" onclick="checkAnswer('Rectangle', 'q19')">Rhombus</button>
+                </div>
+                <p class="feedback" id="feedback-q19"></p>
+            </div>
+            <div class="question" id="question3" style="display: none;">
+                <p>Q20 Claire plotted the points D (6,-2), E(6,-6), F(2,-6) and G (2,-2) on the Cartesian plane. What shape is created when these points are connected?</p>
+                <div class="options">
+                    <button class="option" onclick="checkAnswer('Square', 'q20')">Rectangle</button>
+                    <button class="option" onclick="checkAnswer('Square', 'q20')">Parallelogram</button>
+                    <button class="option correct" onclick="checkAnswer('Square', 'q20')">Square</button>
+                    <button class="option" onclick="checkAnswer('Square', 'q20')">Trapezium</button>
+                </div>
+                <p class="feedback" id="feedback-q20"></p>
+            </div>
+           
+            <div class="navigation">
+                <button id="prevBtn" style="background-color: orange;">Previous</button>
+                <button id="nextbtn" style="display: none; background-color: green;">Next</button>
+
+                
+            </div>
+        </div>
+        <div style="text-align: center;">
+        <div id="canvasContainer">
+            <canvas id="cartesianPlane"></canvas>
+        </div>
+        <div style="display: flex; text-align: center; justify-content: center; gap:10px">
+        <button id="resetBtn" class="delete-icons" onclick="resetPoints()">🗑</button>
+        <button id="removeLastPointBtn"  class="delete-icons" onclick="removeLastPoint()"> ↺</button>
+    </div>
+        <!-- <button id="removeLastPointBtn"  class="delete-icons" style="font-size: 25px; padding: 5px 10px;" onclick="removeLastPoint()"> ↺</button> -->
+
+    </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

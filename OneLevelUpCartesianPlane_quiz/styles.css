@@ -1,0 +1,127 @@
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #f5f5f5;
+}
+
+.container {
+    display: flex;
+    width: 90vw;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 20px;
+}
+
+.questions {
+    width: 40%;
+    height: 55vh;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.option {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.option:hover {
+    background-color: #b37a00;
+}
+
+.feedback {
+    margin-top: 15px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.correct-answer {
+    background-color: #28a745 !important;
+}
+
+.wrong-answer {
+    background-color: #dc3545 !important;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #b37a00;
+}
+
+#canvasContainer {
+    width: 50vw;
+    height: 71vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cartesianPlane {
+    border: 2px solid black;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+#resetBtn {
+    /* margin-top: 10px; */
+    /* padding: 10px 20px; */
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-icons{
+    margin-top: 10px;
+
+    width: 50px;
+    height: 50px;
+    font-size: 35px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 5px;
+}
